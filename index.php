@@ -1,5 +1,5 @@
 <?php
-$host = "localhost";
+$host = "db";
 $user = "sumuser";
 $password = "12345";
 $dbname = "sum_app";
