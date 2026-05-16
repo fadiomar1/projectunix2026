@@ -23,13 +23,14 @@ pipeline {
             }
         }
 
-        stage('Deploy Application') {
-            steps {
-                echo 'Deploying application using Docker...'
-                sh 'docker compose down || true'
-                sh 'docker compose up -d --build'
-            }
-        }
+     stage('Deploy Application') {
+    steps {
+        echo 'Deploying application using Docker...'
+        sh 'docker rm -f sum_app_web sum_app_db || true'
+        sh 'docker compose down || true'
+        sh 'docker compose up -d --build'
+    }
+}
 
         stage('Verify Containers') {
             steps {
