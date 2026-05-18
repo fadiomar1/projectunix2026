@@ -5,7 +5,8 @@ services:
     ports:
       - "8081:80"
     depends_on:
-      - db
+      db:
+        condition: service_healthy
 
   db:
     image: mysql:8.0
@@ -18,3 +19,8 @@ services:
       MYSQL_PASSWORD: 12345
     volumes:
       - ./db.sql:/docker-entrypoint-initdb.d/db.sql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "sumuser", "-p12345"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
