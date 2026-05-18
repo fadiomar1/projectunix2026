@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #eaf7f0;
+    background-color: #30e083;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-    background-color: white;
+    background-color: rgb(250, 102, 102);
     padding: 30px;
     width: 400px;
     border-radius: 10px;
@@ -37,5 +37,5 @@ button:hover {
 }
 
 h2 {
-    color: #218838;
+    color: #db1021;
 }
