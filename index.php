@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Two Numbers Sum Calculator</title>
+    <title>three Numbers Sum Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
