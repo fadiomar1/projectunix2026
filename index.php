@@ -51,7 +51,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
 
 <div class="container">
-    <h1>Two Numbers Sum Calculator</h1>
+    <h1>three Numbers Sum Calculator</h1>
     <p>Please enter two numbers to calculate and save the result.</p>
 
     <form method="POST">
